@@ -1,31 +1,37 @@
-# curriculum-databases-projects-template
+![Microverse](https://img.shields.io/badge/-Microverse-%20%236f23ff?style=for-the-badge) 
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) 
+
+# Vet Clinic Database 🏩 🐵🦁🐢
+
+> This repo holds a relational database for a vet clinic. The database implements PostgreSQL and contains all the data about animals, owners, clinic's employees, etc.  
 
 
-## Getting Started
+## Getting Started ➡️
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly❗**
 
 
-## Authors
+## Authors :writing_hand:
 
-👤 **Author1**
+:woman_technologist:  **Karla Delgado** :writing_hand: 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@karlavdelgadof](https://github.com/karlavdelgadof)
+- Twitter: [@karlavdelgadof](https://twitter.com/karlavdelgadof)
+- LinkedIn: [Karla Delgado](https://www.linkedin.com/in/karla-delgado-613a32239/)
 
-👤 **Author2**
+## Project Milestones 📌 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Milestone 1: Create animals table. ⚙️
+- Milestone 2: Query and update animals table. ⚙️
+- Milestone 3: Query multiple tables.	⚙️
+- Milestone 4: Add "join table" for visits. ⚙️
+- Milestone 5: Database performance audit. ⚙️
+- Exercise: Add database schema diagram. ⚙️
 
 ## 🤝 Contributing
 
