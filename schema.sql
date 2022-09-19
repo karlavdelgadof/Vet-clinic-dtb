@@ -1,7 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-    id INT NOT NULL PRIMARY KEY,
+    id BIGSERIAL NOT NULL PRIMARY KEY, /* For PostgreSQL version purposes I'll be implementing this sequential type instead of IDENTITY(1,1); */
     name VARCHAR(100),
     date_of_birth DATE NOT NULL,
     escape_attempts INT NOT NULL,
