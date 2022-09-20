@@ -19,9 +19,10 @@ BEGIN;
 -- set set species column to unspecified
 UPDATE animals
 SET species = 'unspecified';
-
+SELECT species from animals;
 -- roll back the transaction
 ROLLBACK;
+SELECT species from animals;
 
 
 -- TRANSACTION #2 
@@ -35,9 +36,10 @@ SET species = 'digimon' WHERE name LIKE '%mon';
 -- set the species column to pokemon for all animals that don't have species already set.
 UPDATE animals
 SET species = 'pokemon' WHERE species IS NULL;
-
+SELECT species from animals;
 -- commit the transactions
 COMMIT;
+SELECT species from animals;
 
 -- TRANSACTION #3
 BEGIN;
@@ -45,8 +47,10 @@ BEGIN;
 -- delete all records in the animals table
 DELETE FROM animals;
 
+SELECT COUNT(*) FROM ANIMALS;
 -- roll back the transaction
 ROLLBACK;
+SELECT COUNT(*) FROM ANIMALS;
 
 -- TRANSACTION #4
 
