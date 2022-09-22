@@ -26,8 +26,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Project Milestones 📌 
 
-- Milestone 1: Create animals table. ⚙️
-- Milestone 2: Query and update animals table. ⚙️
+- Milestone 1: Create animals table. ✅
+- Milestone 2: Query and update animals table. ✅
 - Milestone 3: Query multiple tables.	⚙️
 - Milestone 4: Add "join table" for visits. ⚙️
 - Milestone 5: Database performance audit. ⚙️
