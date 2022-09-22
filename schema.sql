@@ -11,3 +11,28 @@ CREATE TABLE animals (
 
 /* Add new column species */
 ALTER TABLE animals ADD species VARCHAR(150);
+
+/* Create new owners table */
+CREATE TABLE owners (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    full_name VARCHAR(180),
+    age INT NOT NULL;
+);
+
+/* Create new species table */
+CREATE TABLE species (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(100),
+);
+
+/* Drop species_id column*/
+ALTER TABLE animals DROP COLUMN species_id;
+
+/* Add column species_id which is a foreign key referencing species table */
+ALTER TABLE animals ADD species_id INT
+ALTER TABLE animals ADD FOREIGN KEY(species_id) REFERENCES species(id);
+
+/* Add column owner_id which is a foreign key referencing the owners table */
+ALTER TABLE animals ADD owner_id INT;
+ALTER TABLE animals ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
+
