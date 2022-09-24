@@ -36,3 +36,27 @@ ALTER TABLE animals ADD FOREIGN KEY(species_id) REFERENCES species(id);
 ALTER TABLE animals ADD owner_id INT;
 ALTER TABLE animals ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
 
+
+/* Create new vets table */
+CREATE TABLE vets (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT NOT NULL,
+    date_of_graduation DATE NOT NULL
+);
+
+/* Create new many-to-many relationship table between species and vets*/
+
+CREATE TABLE specializations (
+    species_id INT NOT NULL REFERENCES species(id),
+    vet_id INT NOT NULL REFERENCES vets(id),
+    PRIMARY KEY (species_id, vet_id)
+);
+
+/* Create new many-to-many relationship table between animals and vets */
+
+CREATE TABLE visits (
+    animal_id INT NOT NULL REFERENCES animals(id),
+    vet_id INT NOT NULL REFERENCES vets(id),
+    visit_date DATE NOT NULL
+);
