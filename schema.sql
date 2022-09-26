@@ -75,5 +75,6 @@ CREATE INDEX visits_of_animal_idx ON visits (animal_id);
 /* Create database index for vet_id on table visits*/
 CREATE INDEX visit_info_vet_idx ON visits (vet_id);
 
-
+/* Create database index for email on table owners*/ 
+CREATE INDEX email_of_owner_idx ON owners (email); 
 
