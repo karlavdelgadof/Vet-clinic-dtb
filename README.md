@@ -4,8 +4,12 @@
 
 # Vet Clinic Database 🏩 🐵🦁🐢
 
-> This repo holds a relational database for a vet clinic. The database implements PostgreSQL and contains all the data about animals, owners, clinic's employees, etc.  
+> This repo holds a relational database for a vet clinic. The database implements PostgreSQL and contains all the data about animals, owners, clinic's employees, etc. 
 
+
+## Database Schema Diagram :memo:
+
+![](./vet-clinic-dgm.png)
 
 ## Getting Started ➡️
 

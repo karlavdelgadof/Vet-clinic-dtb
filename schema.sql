@@ -60,3 +60,21 @@ CREATE TABLE visits (
     vet_id INT NOT NULL REFERENCES vets(id),
     visit_date DATE NOT NULL
 );
+
+/* Add an email column to your owners table */
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+/* Drop not null constraint in table owners column age*/
+
+ALTER TABLE owners ALTER COLUMN age DROP NOT NULL;
+
+/* Create database index for animal_id on table visits*/
+CREATE INDEX visits_of_animal_idx ON visits (animal_id);
+
+/* Create database index for vet_id on table visits*/
+CREATE INDEX visit_info_vet_idx ON visits (vet_id);
+
+/* Create database index for email on table owners*/ 
+CREATE INDEX email_of_owner_idx ON owners (email); 
+
